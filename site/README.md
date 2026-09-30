@@ -5,7 +5,7 @@ ou publique a pasta `site/` em qualquer hospedagem estática (GitHub Pages, Netl
 
 ## Antes de publicar
 
-1. **Checkout da Hotmart:** em `main.js`, preencha `checkoutUrl`. Enquanto estiver vazio, todos os botões levam à seção de preço.
+1. **Checkout da Hotmart:** já configurado (`https://pay.hotmart.com/K107822708W?off=xy2j34ok`). Para trocar, altere `checkoutUrl` em `main.js` e os links `data-checkout` em `index.html`.
 2. **Vídeo de 5 minutos:** em `main.js`, preencha `videoEmbedUrl` com o link de incorporação (YouTube, Vimeo, Panda etc.).
    O botão "Assistir ao vídeo de 5 minutos" só aparece depois disso.
 3. **Foto do Leonardo Enes:** substitua o espaço reservado na seção do autor (há um comentário em `index.html` indicando onde).

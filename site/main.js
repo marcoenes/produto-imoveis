@@ -1,7 +1,7 @@
 // Configuração: preencha com os endereços reais antes de publicar.
 const CONFIG = {
   // Link do checkout da Hotmart. Enquanto estiver vazio, os botões levam à seção de preço.
-  checkoutUrl: '',
+  checkoutUrl: 'https://pay.hotmart.com/K107822708W?off=xy2j34ok',
   // Endereço de incorporação do vídeo de 5 minutos (ex.: https://www.youtube-nocookie.com/embed/ID).
   // Enquanto estiver vazio, o botão "Assistir" fica escondido e só a prévia aparece.
   videoEmbedUrl: '',
