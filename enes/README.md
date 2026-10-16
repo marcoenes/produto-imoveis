@@ -19,6 +19,16 @@ Na ordem do site atual: três compromissos, pilares, coleção dos oito e-books 
 o Guia Essencial), "o anúncio mostra o imóvel", curso com a trilha de 10 módulos, autor, dúvidas,
 chamada final e rodapé. As capas dos e-books são desenhadas em CSS (classe `.capa`), sem imagens.
 
+## Publicar na Vercel
+
+A configuração está em `vercel.json` (cache e cabeçalhos). Não há build. Para criar o projeto, uma vez só:
+
+1. Em vercel.com, **Add New… → Project** e importe o repositório `marcoenes/produto-imoveis`.
+2. Em **Root Directory**, escolha `enes`. Em **Framework Preset**, deixe **Other**. Não preencha build nem output.
+3. Clique em **Deploy**.
+
+Depois disso, cada merge no `main` publica sozinho, e cada PR ganha um link de prévia.
+
 ## Antes de publicar
 
 1. **Textos:** títulos, rótulos e perguntas vêm do print de enes.com.br. Os parágrafos estavam ilegíveis
