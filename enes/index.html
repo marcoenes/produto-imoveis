@@ -63,15 +63,269 @@
       </div>
     </section>
 
-    <section class="proxima" id="conteudo">
+    <!-- Faixa de três compromissos logo abaixo da abertura -->
+    <section class="marcos" id="conteudo" aria-label="O que você aprende">
+      <ol class="faixa marcos__lista">
+        <li><span class="marcos__n">01</span> Compre o negócio certo</li>
+        <li><span class="marcos__n">02</span> Aprenda a investir</li>
+        <li><span class="marcos__n">03</span> Proteja seu dinheiro</li>
+      </ol>
+    </section>
+
+    <!-- Pilares -->
+    <section class="secao secao--marfim" aria-labelledby="pilares-titulo">
       <div class="faixa">
-        <!-- Próximo passo: as demais seções de enes.com.br (pilares, coleção, curso, autor, dúvidas). -->
-        <h2 id="colecao">Qual é o seu próximo passo para ganhar mais?</h2>
-        <p id="curso">Aqui entram a coleção de e-books, o curso, o autor e as dúvidas frequentes, como no site atual.</p>
-        <p id="autor"></p>
+        <header class="cabeca cabeca--centro" data-revela>
+          <p class="rotulo">Conhecimento que muda a sua conta</p>
+          <h2 id="pilares-titulo">Oportunidade para ganhar. <span class="h2-suave">Preparo para não perder.</span></h2>
+          <p class="cabeca__apoio">O preço é só uma parte do negócio. O que separa um bom resultado de um prejuízo é o que você entende antes de assinar.</p>
+        </header>
+
+        <div class="pilares">
+          <article class="pilar" data-revela>
+            <p class="pilar__n">01 · Decisão</p>
+            <h3>Aprenda a pagar menos pela decisão certa.</h3>
+            <p>Compare custos, prazos e condições antes de escolher. Saber o que perguntar é o que dá margem para negociar.</p>
+            <a class="link-fio" href="#colecao">Comece pela coleção</a>
+          </article>
+          <article class="pilar" data-revela>
+            <p class="pilar__n">02 · Investir</p>
+            <h3>Enxergue o potencial de construir renda.</h3>
+            <p>Entenda quando um imóvel gera renda, valoriza ou apenas imobiliza o seu dinheiro, e como fazer a conta de cada caso.</p>
+            <a class="link-fio" href="#colecao" data-filtro-ir="investir">Explore os e-books de investimento</a>
+          </article>
+          <article class="pilar" data-revela>
+            <p class="pilar__n">03 · Proteção</p>
+            <h3>Não deixe uma armadilha levar o seu dinheiro.</h3>
+            <p>Documentos, contratos e responsabilidades que costumam passar despercebidos, e o que conferir em cada etapa.</p>
+            <a class="link-fio" href="#negocio">Conheça os cuidados de cada etapa</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Coleção -->
+    <section class="secao secao--areia" id="colecao" aria-labelledby="colecao-titulo">
+      <div class="faixa">
+        <header class="cabeca cabeca--dupla" data-revela>
+          <div>
+            <p class="rotulo">A coleção</p>
+            <h2 id="colecao-titulo">Qual é o seu próximo passo <span class="h2-suave">para ganhar mais?</span></h2>
+          </div>
+          <p class="cabeca__apoio">Comece pelo e-book que resolve o momento que você vive agora. Cada volume se lê sozinho, e juntos formam a jornada completa.</p>
+        </header>
+
+        <div class="filtros" role="group" aria-label="Filtrar e-books">
+          <button type="button" class="filtro" data-filtro="todos" aria-pressed="true">Todos os e-books</button>
+          <button type="button" class="filtro" data-filtro="comprar" aria-pressed="false">Comprar</button>
+          <button type="button" class="filtro" data-filtro="financas" aria-pressed="false">Finanças</button>
+          <button type="button" class="filtro" data-filtro="investir" aria-pressed="false">Investir</button>
+        </div>
+
+        <ul class="livros" data-livros>
+          <li class="livro" data-categoria="comprar">
+            <div class="capa" aria-hidden="true"><img src="assets/img/simbolo-dourado.png" alt="" width="40" height="40"><span class="capa__titulo">A Decisão</span><span class="capa__n">01</span></div>
+            <p class="livro__tipo">E-book · Comprar</p>
+            <h3>A Decisão</h3>
+            <p>Comprar, alugar ou esperar? Organize a escolha antes de olhar imóveis e evite compromissos que não cabem no seu plano.</p>
+            <a class="link-fio" href="#">Ver conteúdo</a>
+          </li>
+          <li class="livro" data-categoria="comprar">
+            <div class="capa" aria-hidden="true"><img src="assets/img/simbolo-dourado.png" alt="" width="40" height="40"><span class="capa__titulo">Comprar na Planta</span><span class="capa__n">02</span></div>
+            <p class="livro__tipo">E-book · Comprar</p>
+            <h3>Comprar na Planta</h3>
+            <p>Entenda o que está por trás da promessa de entrega: correção das parcelas, prazos, distrato e o que conferir na incorporadora.</p>
+            <a class="link-fio" href="#">Ver conteúdo</a>
+          </li>
+          <li class="livro" data-categoria="comprar">
+            <div class="capa" aria-hidden="true"><img src="assets/img/simbolo-dourado.png" alt="" width="40" height="40"><span class="capa__titulo">Comprar Imóvel Usado</span><span class="capa__n">03</span></div>
+            <p class="livro__tipo">E-book · Comprar</p>
+            <h3>Comprar Imóvel Usado</h3>
+            <p>Documentação do imóvel e do vendedor, vistoria e pendências que podem passar para você depois da assinatura.</p>
+            <a class="link-fio" href="#">Ver conteúdo</a>
+          </li>
+          <li class="livro" data-categoria="financas">
+            <div class="capa" aria-hidden="true"><img src="assets/img/simbolo-dourado.png" alt="" width="40" height="40"><span class="capa__titulo">O Dinheiro</span><span class="capa__n">04</span></div>
+            <p class="livro__tipo">E-book · Finanças</p>
+            <h3>O Dinheiro</h3>
+            <p>Financiamento, consórcio, FGTS e à vista: como comparar o custo real de cada caminho e escolher o que pesa menos.</p>
+            <a class="link-fio" href="#">Ver conteúdo</a>
+          </li>
+          <li class="livro" data-categoria="investir">
+            <div class="capa" aria-hidden="true"><img src="assets/img/simbolo-dourado.png" alt="" width="40" height="40"><span class="capa__titulo">Leilões de Imóveis</span><span class="capa__n">05</span></div>
+            <p class="livro__tipo">E-book · Investir</p>
+            <h3>Leilões de Imóveis</h3>
+            <p>Edital, ocupação, dívidas e custos de regularização: o que avaliar para que o desconto do leilão seja ganho de verdade.</p>
+            <a class="link-fio" href="#">Ver conteúdo</a>
+          </li>
+          <li class="livro" data-categoria="comprar">
+            <div class="capa" aria-hidden="true"><img src="assets/img/simbolo-dourado.png" alt="" width="40" height="40"><span class="capa__titulo">Contrato, Cartório e Chaves</span><span class="capa__n">06</span></div>
+            <p class="livro__tipo">E-book · Comprar</p>
+            <h3>Contrato, Cartório e Chaves</h3>
+            <p>Da proposta ao registro: cláusulas, escritura, ITBI e o momento certo de pagar e de receber as chaves.</p>
+            <a class="link-fio" href="#">Ver conteúdo</a>
+          </li>
+          <li class="livro" data-categoria="investir">
+            <div class="capa" aria-hidden="true"><img src="assets/img/simbolo-dourado.png" alt="" width="40" height="40"><span class="capa__titulo">Aluguel</span><span class="capa__n">07</span></div>
+            <p class="livro__tipo">E-book · Investir</p>
+            <h3>Aluguel</h3>
+            <p>Para quem aluga e para quem coloca o imóvel para alugar: garantias, reajustes, vistorias e como evitar conflitos.</p>
+            <a class="link-fio" href="#">Ver conteúdo</a>
+          </li>
+          <li class="livro" data-categoria="investir">
+            <div class="capa" aria-hidden="true"><img src="assets/img/simbolo-dourado.png" alt="" width="40" height="40"><span class="capa__titulo">Investir em Imóveis</span><span class="capa__n">08</span></div>
+            <p class="livro__tipo">E-book · Investir</p>
+            <h3>Investir em Imóveis</h3>
+            <p>Renda, valorização e custos de manutenção na mesma conta, para decidir com números e não com expectativa.</p>
+            <a class="link-fio" href="#">Ver conteúdo</a>
+          </li>
+        </ul>
+
+        <aside class="guia" data-revela>
+          <div class="capa capa--mini" aria-hidden="true"><img src="assets/img/simbolo-dourado.png" alt="" width="28" height="28"></div>
+          <div class="guia__texto">
+            <p class="rotulo">Comece pelo guia</p>
+            <p class="guia__titulo">A jornada também tem um Guia Essencial.</p>
+            <p>Uma visão geral de todas as etapas, para você saber por onde começar antes de escolher os volumes.</p>
+          </div>
+          <a class="link-fio" href="#">Conhecer o Guia Essencial</a>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Enxergar o negócio -->
+    <section class="secao secao--marfim" id="negocio" aria-labelledby="negocio-titulo">
+      <div class="faixa negocio">
+        <header class="cabeca" data-revela>
+          <p class="rotulo">Mais clareza, menos imprevisto</p>
+          <h2 id="negocio-titulo">O anúncio mostra o imóvel. <span class="h2-suave">Aprenda a enxergar o negócio.</span></h2>
+          <p class="cabeca__apoio">Um imóvel bem apresentado pode esconder custos, pendências e condições que mudam o resultado. A diferença está no que você sabe conferir.</p>
+        </header>
+        <ol class="passos">
+          <li data-revela>
+            <span class="passos__n">01</span>
+            <div><h3>Entenda quanto realmente custa.</h3><p>Preço, taxas, impostos, cartório, condomínio e reforma: a conta completa antes da proposta.</p></div>
+          </li>
+          <li data-revela>
+            <span class="passos__n">02</span>
+            <div><h3>Reconheça o que precisa de atenção.</h3><p>Documentos, dívidas e cláusulas que pedem cuidado, explicados para quem não é da área.</p></div>
+          </li>
+          <li data-revela>
+            <span class="passos__n">03</span>
+            <div><h3>Chegue mais preparado à negociação.</h3><p>Prazos, despesas e responsabilidades também se negociam. Saiba o que pedir e o que não aceitar.</p></div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Curso -->
+    <section class="secao secao--noite" id="curso" aria-labelledby="curso-titulo">
+      <div class="faixa curso">
+        <div class="curso__texto" data-revela>
+          <p class="rotulo rotulo--claro">O próximo passo da sua jornada <span class="selo">Em breve</span></p>
+          <h2 id="curso-titulo">Aprenda a pensar <span class="destaque">como um investidor.</span></h2>
+          <p>O curso online Imóvel Sem Armadilhas reúne a coleção em uma trilha guiada, com exemplos reais e exercícios para você aplicar em cada negociação.</p>
+          <p>Da primeira decisão ao contrato assinado, com o método que organiza o que conferir em cada etapa.</p>
+          <a class="botao botao--contorno" href="#trilha">Explorar o programa previsto</a>
+        </div>
+        <div class="curso__cartao" data-revela>
+          <img src="assets/img/simbolo-dourado.png" alt="" width="56" height="56">
+          <p class="curso__tipo">Curso online</p>
+          <p class="curso__nome">Imóvel Sem Armadilhas</p>
+          <p class="curso__sub">Construa riqueza. Proteja seu futuro.</p>
+          <ul class="curso__itens">
+            <li>10 módulos em sequência</li>
+            <li>Baseado na coleção de e-books</li>
+            <li>Acesso online</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="faixa trilha" id="trilha">
+        <header class="cabeca" data-revela>
+          <p class="rotulo rotulo--claro">Seu caminho de aprendizado</p>
+          <h2>Uma visão completa. <span class="destaque">Uma etapa de cada vez.</span></h2>
+          <p class="cabeca__apoio">Cada módulo corresponde a um momento da negociação. Você avança no seu ritmo e volta quando precisar.</p>
+        </header>
+        <ol class="modulos">
+          <li><details><summary><span class="modulos__n">01</span> Boas-vindas e visão da jornada</summary><p>Como o curso está organizado e como tirar mais proveito de cada etapa.</p></details></li>
+          <li><details><summary><span class="modulos__n">02</span> A decisão antes de comprar</summary><p>Comprar, alugar ou esperar: critérios para decidir antes de visitar imóveis.</p></details></li>
+          <li><details><summary><span class="modulos__n">03</span> Comprar na planta</summary><p>Contrato com a incorporadora, correção das parcelas e entrega.</p></details></li>
+          <li><details><summary><span class="modulos__n">04</span> Comprar imóvel usado</summary><p>Documentação, vistoria e pendências do imóvel e do vendedor.</p></details></li>
+          <li><details><summary><span class="modulos__n">05</span> O dinheiro</summary><p>Financiamento, consórcio, FGTS e pagamento à vista lado a lado.</p></details></li>
+          <li><details><summary><span class="modulos__n">06</span> Leilões de imóveis</summary><p>Edital, ocupação e custos que definem se o desconto compensa.</p></details></li>
+          <li><details><summary><span class="modulos__n">07</span> Contrato, cartório e chaves</summary><p>Da proposta ao registro, com cada pagamento no momento certo.</p></details></li>
+          <li><details><summary><span class="modulos__n">08</span> Aluguel</summary><p>Garantias, reajustes e vistorias, para quem aluga e para quem coloca para alugar.</p></details></li>
+          <li><details><summary><span class="modulos__n">09</span> Investir em imóveis</summary><p>Renda, valorização e custos na mesma conta.</p></details></li>
+          <li><details><summary><span class="modulos__n">10</span> Encerramento e próximos passos</summary><p>Um plano para a sua próxima negociação.</p></details></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Autor -->
+    <section class="secao secao--marfim" id="autor" aria-labelledby="autor-titulo">
+      <div class="faixa autor">
+        <div class="autor__marca" data-revela>
+          <img src="assets/img/logo-vertical-dourado.png" alt="Imóvel Sem Armadilhas: Construa riqueza. Proteja seu futuro." width="909" height="768" loading="lazy">
+        </div>
+        <div class="autor__texto" data-revela>
+          <p class="rotulo">Conheça o autor</p>
+          <h2 id="autor-titulo">Leonardo Enes</h2>
+          <p>Autor da série Imóvel Sem Armadilhas, Leonardo reúne na coleção o conhecimento prático de quem acompanha de perto compras, vendas, locações e investimentos imobiliários.</p>
+          <p>O objetivo é simples: que quem negocia um imóvel poucas vezes na vida chegue à mesa entendendo o que está assinando.</p>
+          <a class="link-fio" href="#colecao">Conheça a coleção</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dúvidas -->
+    <section class="secao secao--marfim secao--colada" id="duvidas" aria-labelledby="duvidas-titulo">
+      <div class="faixa duvidas">
+        <header class="cabeca" data-revela>
+          <p class="rotulo">Perguntas frequentes</p>
+          <h2 id="duvidas-titulo">Antes de escolher, <span class="h2-suave">tire suas dúvidas.</span></h2>
+        </header>
+        <div class="perguntas">
+          <details><summary>Por qual e-book devo começar?</summary><p>Pelo que corresponde ao seu momento. Se ainda está decidindo entre comprar, alugar ou esperar, comece por A Decisão. Se já escolheu o caminho, vá direto ao volume dessa etapa.</p></details>
+          <details><summary>Preciso ler todos os livros em sequência?</summary><p>Não. Cada volume se lê sozinho. A sequência ajuda quem quer a visão completa da jornada.</p></details>
+          <details><summary>O conteúdo serve para quem entende pouco de imóveis?</summary><p>Sim. A coleção foi escrita para quem não domina contratos, documentos ou impostos, com linguagem direta e exemplos.</p></details>
+          <details><summary>O que é o Guia Essencial?</summary><p>Um resumo de todas as etapas da jornada, para você entender o caminho completo e escolher por onde começar.</p></details>
+          <details><summary>Quando o curso estará disponível?</summary><p>O curso está em preparação. Os e-books já estão disponíveis e são a base do programa.</p></details>
+          <details><summary>O conteúdo substitui a análise de um profissional?</summary><p>Não. O conteúdo é educativo e ajuda você a fazer as perguntas certas. Em casos específicos, procure advogado, contador ou corretor de confiança.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chamada final -->
+    <section class="chamada" aria-labelledby="chamada-titulo">
+      <div class="faixa chamada__grade" data-revela>
+        <div>
+          <p class="rotulo rotulo--claro">O seu patrimônio merece preparo</p>
+          <h2 id="chamada-titulo">Seu dinheiro pode ir mais longe. <span class="destaque">Comece pelo conhecimento.</span></h2>
+        </div>
+        <a class="botao" href="#colecao">Explorar os e-books</a>
       </div>
     </section>
   </main>
+
+  <footer class="rodape">
+    <div class="faixa rodape__grade">
+      <a class="topo__marca" href="#inicio" aria-label="Imóvel Sem Armadilhas — voltar ao início">
+        <img src="assets/img/simbolo-dourado.png" alt="" width="32" height="32" loading="lazy">
+        <span>Imóvel Sem Armadilhas</span>
+      </a>
+      <nav class="rodape__nav" aria-label="Rodapé">
+        <a href="#colecao">Coleção</a>
+        <a href="#curso">Curso</a>
+        <a href="#autor">Autor</a>
+        <a href="#duvidas">Dúvidas</a>
+      </nav>
+    </div>
+    <div class="faixa rodape__base">
+      <p>Conteúdo educativo. Não substitui a orientação de profissionais habilitados em cada caso.</p>
+      <p>© 2026 Leonardo Enes. Todos os direitos reservados.</p>
+    </div>
+  </footer>
 
   <script src="main.js" defer></script>
 </body>

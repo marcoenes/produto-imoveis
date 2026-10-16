@@ -66,3 +66,34 @@ if (abertura && video && CONFIG.aberturaVideoUrl && !reduzMovimento) {
   };
   requestAnimationFrame(desenhar);
 }
+
+// Topo: ganha fundo sólido quando a abertura sai da tela
+const topo = document.querySelector('.topo');
+if (topo && abertura) {
+  new IntersectionObserver(([e]) => topo.classList.toggle('topo--solido', !e.isIntersecting), {
+    rootMargin: '-80px 0px 0px 0px',
+  }).observe(abertura);
+}
+
+// Coleção: filtros por tema
+const filtros = [...document.querySelectorAll('[data-filtro]')];
+const livros = [...document.querySelectorAll('[data-livros] .livro')];
+const filtrar = (tema) => {
+  filtros.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.filtro === tema)));
+  livros.forEach((l) => { l.hidden = tema !== 'todos' && l.dataset.categoria !== tema; });
+};
+filtros.forEach((b) => b.addEventListener('click', () => filtrar(b.dataset.filtro)));
+document.querySelectorAll('[data-filtro-ir]').forEach((a) => {
+  a.addEventListener('click', () => filtrar(a.dataset.filtroIr));
+});
+
+// Entrada suave das seções
+if (!reduzMovimento && 'IntersectionObserver' in window) {
+  document.documentElement.classList.add('revela-pronto');
+  const observador = new IntersectionObserver((entradas) => {
+    for (const e of entradas) {
+      if (e.isIntersecting) { e.target.classList.add('visivel'); observador.unobserve(e.target); }
+    }
+  }, { rootMargin: '0px 0px -10% 0px' });
+  document.querySelectorAll('[data-revela]').forEach((el) => observador.observe(el));
+}
