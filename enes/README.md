@@ -19,6 +19,30 @@ Na ordem do site atual: três compromissos, pilares, coleção dos oito e-books 
 o Guia Essencial), "o anúncio mostra o imóvel", curso com a trilha de 10 módulos, autor, dúvidas,
 chamada final e rodapé. As capas dos e-books são desenhadas em CSS (classe `.capa`), sem imagens.
 
+## Publicar na VPS (Hostinger)
+
+Os arquivos em `deploy/` instalam o site numa VPS Ubuntu/Debian com nginx. O código vem do `main`
+deste repositório no GitHub; o vídeo e as imagens são baixados para o servidor e o vídeo é recodificado
+para a rolagem.
+
+**Primeira vez** (acesse a VPS por SSH como root e rode):
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/marcoenes/produto-imoveis/main/enes/deploy/instalar-vps.sh -o instalar-vps.sh
+bash instalar-vps.sh                              # site no IP da VPS
+bash instalar-vps.sh enes.com.br voce@email.com   # ou: no domínio, com HTTPS
+```
+
+Para usar um domínio, o registro A dele precisa apontar antes para o IP da VPS.
+
+**Atualizar** depois de um merge no `main`: `atualizar-enes` na VPS.
+
+| Arquivo | O que faz |
+|---|---|
+| `deploy/instalar-vps.sh` | Instala nginx, git, rsync e ffmpeg; clona o repositório em `/opt/produto-imoveis`; publica em `/var/www/enes`; configura o nginx e, com domínio, o HTTPS. |
+| `deploy/atualizar.sh` | Instalado como `atualizar-enes`: baixa o `main` e publica de novo, mantendo a mídia já baixada. |
+| `deploy/nginx.conf` | Configuração do site no nginx (cache e cabeçalhos). |
+
 ## Antes de publicar
 
 1. **Textos:** títulos, rótulos e perguntas vêm do print de enes.com.br. Os parágrafos estavam ilegíveis
