@@ -35,6 +35,10 @@ bash instalar-vps.sh enes.com.br voce@email.com   # ou: no domínio, com HTTPS
 
 Para usar um domínio, o registro A dele precisa apontar antes para o IP da VPS.
 
+Se a porta 80 já tiver dono (por exemplo, um contêiner Docker ou um painel), publique em outra porta,
+sem domínio: `PORTA=8080 bash instalar-vps.sh`. O site fica em `http://IP:8080`. Se não abrir, libere
+a porta no firewall da VPS (no painel da Hostinger).
+
 **Atualizar** depois de um merge no `main`: `atualizar-enes` na VPS.
 
 | Arquivo | O que faz |
